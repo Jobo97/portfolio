@@ -1,55 +1,174 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ben Millett</title>
-    <link rel="stylesheet" type="text/css" href="app.css">
-  </head>
-  <body>
-    <ul>
-      <li class="inline"><a href="#home">Home</a></li>
-      <li class="inline"><a href="#news">News</a></li>
-      <li class="inline"><a href="#contact">Contact</a></li>
-      <li class="inline"><a href="#about">About</a></li>
-    </ul>
-    <h1>Welcome!</h1>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+.list {
+  font-family: helvetica;
+  list-style-type: square;
+  text-align: center;
+  font-style: italic;
+}
+
+.list b {
+  font-style: oblique;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: green;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Note -->
+<div style="background:green;padding:5px">
+  <h4 style="text-align:center">Go Hawks!</h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>Welcome!</h1>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">Family Pictures</a>
+  <a href="#">Frequently Visited Sites</a>
+  <a href="#">Seahawks Schedule</a>
+  <a href="#">Covid-19</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
     <h2>About Me</h2>
-      <p>
-        I grew up in Sammamish, Washington where my family had recently moved for my Fathers work.<br>
-        He now has been working for Abode my whole life and has inspired me to seek the same profession.<br>
-        I live for sports and competition of any kind as I feel it brings out the best of each side whlie<br>
-        trying to acheive a common goal. If you'd like to chat about the NFL, NBA, MLS, MLB or even Hockey,<br>
-        please contact me below!<br>
-      </p>
-
-    <h2>Projects</h2>
-      <p>My experience with programing began with CS 142 at BYU in 2018. Since then I have completed a few projects such as:
-        <ul class='list'>
-          <li><b>Image editor:</b> With the input of an image, my project could distort/flip/monochrome it as desired</li>
-          <li><b>Evil Hangman:</b> This game is programmed to never let the player win, as it cheats to not allow a correct guess until it has to.</li>
-          <li><b>Family Search:</b> This App allows the user to input family history into a server and view on a map their own heritage!</li>
-        </ul>
-      </p>
-
-    <h2>Experience</h2>
-      <p>
-        I have been working for over a year at Brigham Young University in their Continuing Education division.<br>
-        In this division, I am the lead corrections manager where I fix errors inside of our LMS's to allow <br>
-        students to continue in their learning. This involves coding in HTML and CSS mainly to fix test questions and<br>
-        banks.
-      </p>
-
-
-    <hr>
-    <h2>Contact Information</h2>
+    <h5>Photo of My Family:</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>A photo of my family and I. Yes, there are many of them. Yes, that is his real hair. And Tyler is my friend.</p>
+    <h3>Family information</h3>
+    <p>Half of my family lives in Western Washington, the rest are in California, St. Louis, and here in Utah.</p>
+    <div class="fakeimg" style="height:60px;">Washington House</div><br>
+    <div class="fakeimg" style="height:60px;">Hansen at the arch</div><br>
+    <div class="fakeimg" style="height:60px;">Andrew in California</div>
+  </div>
+  <div class="main">
+    <h2>About Me</h2>
+    <h5>Look Ma, it's Me!</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>I grew up in Sammamish, Washington where my family had recently moved for my Fathers work.<br>
+    He now has been working for Abode my whole life and has inspired me to seek the same profession.<br>
+    I live for sports and competition of any kind as I feel it brings out the best of each side whlie<br>
+    trying to acheive a common goal. If you'd like to chat about the NFL, NBA, MLS, MLB or even Hockey,<br>
+    please contact me below!<br></p>
+    <p>My experience with programing began with CS 142 at BYU in 2018. Since then I have completed a few projects such as:
       <ul class='list'>
-        <li><b>Email:</b> <a href="mailto:benmillett3@gmail.com">benmillett3@gmail.com</a></li>
-        <li><b>Instagram:</b> @millben</li>
-        <li><b>Twitter:</b> @MillettBen</li>
+        <li><b>Image editor:</b> With the input of an image, my project could distort/flip/monochrome it as desired.</li>
+        <li><b>Evil Hangman:</b> This game is programmed to never let the player win, as it cheats to not allow a correct guess until it has to.</li>
+        <li><b>Family Search:</b> This App allows the user to input family history into a server and view on a map their own heritage!</li>
       </ul>
+    </p>
+    <br>
+    <h2>Experience</h2>
+    <h5>Why I Would Be an Asset</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>My work</p>
+    <p>
+      I have been working for over a year at Brigham Young University in their Continuing Education division.<br>
+      In this division, I am the lead corrections manager where I fix errors inside of our LMS's to allow <br>
+      students to continue in their learning. This involves coding in HTML and CSS mainly to fix test questions and<br>
+      banks.
+    </p>
+    </div>
+</div>
 
+<!-- Footer -->
+<div class="footer">
+  <h2>Contact Information</h2>
+    <p>
+    Email: <a href="mailto:benmillett3@gmail.com">benmillett3@gmail.com</a><br>
+    Instagram: @millben<br>
+    Twitter: @MillettBen<br>
+    </p>
+</div>
 
-  </body>
-
-
-
+</body>
 </html>
